@@ -101,7 +101,7 @@ function lietke($con, $start, $phrase, $how, $action) {
   if ($search) $sql= "SELECT Sach.* FROM Sach inner join " . ucfirst($how) .
     " on Sach." . strtolower($how) . " = ".ucfirst($how). ".ten ". " where ". ucfirst($how) . ".ten = '". $phrase . "' " . $ending;
   else $sql= "SELECT * FROM Sach " . $ending;
-  //echo $sql;
+  echo $sql;
   //echo "<br/>";
   //echo $start;
 
