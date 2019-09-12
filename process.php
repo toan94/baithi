@@ -101,7 +101,7 @@ function lietke($con, $start, $phrase, $how, $action) {
   if ($search) $sql= "SELECT Sach.* FROM Sach inner join " . ucfirst($how) .
     " on Sach." . strtolower($how) . " = ".ucfirst($how). ".ten ". " where ". ucfirst($how) . ".ten = '". $phrase . "' " . $ending;
   else $sql= "SELECT * FROM Sach " . $ending;
-  echo $sql;
+  //echo $sql;
   //echo "<br/>";
   //echo $start;
 
@@ -118,6 +118,8 @@ function lietke($con, $start, $phrase, $how, $action) {
     echo "<br/><form action='process.php' method='post'>".
       "<input type='hidden' name='action' value='".$action."' />".
       "<input type='hidden' name='start' value=" . ($start+$per) ." />".
+      "<input type='hidden' name='phrase' value='" . $phrase ."' />".
+      "<input type='hidden' name='how' value='" . $how . "' />'".
       "<input type='submit' value='MORE' />".
     "</form>";
   } else {
