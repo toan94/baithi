@@ -24,7 +24,7 @@ function themsach($con, $ten, $nxb, $theloai, $tacgia) {
   } else {
     echo "Error: " . $sql . "<br>" . $con->error;
   }
-  echo "<br/><a href='index.html'>HOME</a>";
+  echo "<br/><a href='index.php'>HOME</a>";
 }
 ///////////////////
 
@@ -55,7 +55,7 @@ function xoasach($con, $ten) {
   } else {
     echo "Error: " . $sql . "<br>" . $con->error;
   }
-  echo "<br/><a href='index.html'>HOME</a>";
+  echo "<br/><a href='index.php'>HOME</a>";
 
 }
 ////////////////////////
@@ -86,7 +86,7 @@ function suathongtin($con, $ten, $nxb, $theloai, $tacgia) {
   } else {
     echo "Error: " . $sql . "<br>" . $con->error;
   }
-  echo "<br/><a href='index.html'>HOME</a>";
+  echo "<br/><a href='index.php'>HOME</a>";
 
 }
 ///////////////////////////////////////////////////////////////
@@ -123,7 +123,7 @@ function lietke($con, $start, $phrase, $how, $action) {
   } else {
       echo "HET";
   }
-  echo "<br/><a href='index.html'>HOME</a>";
+  echo "<br/><a href='index.php'>HOME</a>";
 }
 
 //////////////////////////////////////////////////////////////
